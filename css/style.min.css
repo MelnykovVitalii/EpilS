@@ -445,7 +445,11 @@ body {
   font-weight: 500;
   padding-bottom: 6px;
   border-bottom: 2px solid transparent;
+  transition: all 0.5s ease;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.menu__link:hover {
+  border-bottom: 2px solid;
 }
 .menu__link.active-item {
   border-bottom: 2px solid;
@@ -458,7 +462,7 @@ body {
 
 .about {
   background-color: #fffaf6;
-  padding: 130px 155px 65px 155px;
+  padding: 130px 155px 23px 155px;
   transition: all 0.6s;
   overflow: hidden;
 }
@@ -475,6 +479,7 @@ body {
 }
 
 .about-text {
+  line-height: 42px;
   flex: 0 1 auto;
 }
 
@@ -518,7 +523,7 @@ body {
 .details-item {
   display: flex;
   flex: 0 1 45%;
-  margin-bottom: 49.5px;
+  margin-bottom: 102px;
   max-width: 518px;
   transition: all 0.6s;
 }
@@ -536,6 +541,9 @@ body {
   transition: all 0.6s;
 }
 
+.zabiegi {
+  margin-top: -105px;
+}
 .zabiegi__background {
   margin-bottom: -49px;
   margin-left: 22px;
@@ -557,20 +565,21 @@ body {
 .zabiegi__btn-block {
   margin: 0 auto;
   text-align: center;
-  padding: 58px 0px;
+  padding: 40px 0px;
 }
 .zabiegi__btn {
   display: inline-block;
-  padding: 20px 89px;
+  padding: 24px 89px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 24px;
   line-height: 20px;
   text-transform: uppercase;
   color: #392e26;
   background: #f2b6a8;
   border-radius: 25px;
   transition: all 0.5s ease;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .zabiegi__btn:hover {
   background: #f6ccc3;
@@ -590,7 +599,7 @@ body {
 .zabiegi .tabs__item {
   flex: 0 1 auto;
   list-style: none;
-  margin: 18px 10px;
+  margin: 17px 19px;
   font-size: 26px;
   font-weight: 600;
   text-transform: uppercase;
@@ -598,7 +607,7 @@ body {
 }
 .zabiegi .tabs__head .sub__items {
   padding: 0px;
-  margin-top: 68px;
+  margin-top: 51px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -610,7 +619,7 @@ body {
   font-size: 26px;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 0px 50px;
+  margin: 0px 42px;
   color: #000000;
   border-bottom: 2px solid transparent;
 }
@@ -666,7 +675,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   list-style: none;
-  margin: 15px 0px;
+  margin: 11px 0px;
 }
 .zabiegi .tabs__content .content__item.bold {
   font-weight: 500;
@@ -688,9 +697,9 @@ body {
 .benefits-block {
   background-image: url(../img/Rectangle_25.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center center;
-  padding: 154px 71px 57px 71px;
+  padding: 171px 71px 57px 71px;
   background-color: #fffaf6;
   transition: all 0.6s;
 }
@@ -815,6 +824,7 @@ body {
 }
 .effects-block .effectsSlider-btn-prev {
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -824,6 +834,7 @@ body {
   display: none;
 }
 .effects-block .effectsSlider-btn-next {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -859,7 +870,7 @@ body {
   width: 100%;
   height: 185px;
   background: url(../img/background_feedback.png);
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
@@ -989,7 +1000,7 @@ body {
 }
 .gift-card__btn-block {
   margin: 0 auto;
-  margin-top: 113px;
+  margin-top: 101px;
   padding-top: 44px;
   padding-bottom: 107px;
   text-align: center;
@@ -1019,6 +1030,7 @@ body {
   background: #fffaf6;
   border-radius: 25px;
   transition: all 0.5s ease;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .gift-card__btn:hover {
   background: #f7ccc3;
@@ -1046,7 +1058,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  padding: 0 10px;
+  padding: 0px;
   transition: all 0.6s;
 }
 
@@ -1129,7 +1141,7 @@ body {
   font-weight: 600;
   font-size: 20px;
   padding: 0 0 12px 0;
-  margin: 0 0 35px 0;
+  margin: 0 0 28px 0;
   position: relative;
 }
 
@@ -1338,6 +1350,9 @@ body {
   }
 }
 @media (max-width: 510px) {
+  .zabiegi {
+    margin-top: 0px;
+  }
   .zabiegi .tabs__content .content__wrapper {
     margin: 14px 0px;
     justify-content: space-between;
@@ -1385,21 +1400,21 @@ body {
     display: none;
   }
   .zabiegi__btn-block {
-    padding-top: 40px;
+    padding-top: 23px;
     padding-bottom: 47px;
   }
   .zabiegi__btn {
-    padding: 12px 50px;
+    padding: 12px 49px;
     font-size: 14px;
     line-height: 16px;
   }
   .zabiegi .tabs__item {
     font-size: 14px;
-    margin: 9px 7px;
+    margin: 8px 7px;
   }
   .zabiegi .tabs__head .sub__items {
-    margin-top: 35px;
-    margin-bottom: 27px;
+    margin-top: 27px;
+    margin-bottom: 42px;
   }
   .zabiegi .tabs__head .sub__item {
     margin: 0px 14px;
@@ -1455,6 +1470,7 @@ body {
 @media (max-width: 767px) {
   .feedback {
     margin: 0px;
+    padding-bottom: 48px;
   }
   .feedback__background .background {
     margin-bottom: -11px;
@@ -1472,44 +1488,44 @@ body {
     box-sizing: border-box;
   }
   .feedback .card__title {
-    margin-left: 13px;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
   }
   .feedback .card__body {
-    padding: 5px 20px 0px 13px;
-    font-size: 10px;
-    line-height: 18px;
+    padding: 10px 20px 0px 20px;
+    font-size: 14px;
+    line-height: 21px;
   }
   .feedback .card .card__quotes {
-    width: 16px;
-    height: 14px;
+    width: 21px;
+    height: 19px;
   }
   .feedback .card .card__quotes svg {
-    width: 8px;
-    height: 5px;
+    width: 13px;
+    height: 10px;
   }
   .feedback .card__customer-name {
-    margin-top: 6px;
-    font-size: 10px;
+    margin-top: 10px;
+    font-size: 14px;
   }
   .feedback .card__footer {
-    padding: 10px 20px 0px 13px;
+    padding: 3px 20px 0px 20px;
   }
   .feedback .card__footer-line {
-    max-width: 85px;
+    max-width: 130px;
   }
   .feedback .card__customer-stars .stars__container {
     margin-top: 0px;
     max-width: 45px;
   }
   .feedback .card__customer-stars .stars__container .star {
-    width: 16px;
-    height: 15px;
+    width: 21px;
+    height: 20px;
     display: flex;
   }
   .feedback .card__customer-stars .stars__container .star svg {
-    width: 6px;
-    height: 5px;
+    width: 11px;
+    height: 10px;
   }
   .feedback .feedbackSlider {
     max-width: 1100px;
@@ -1538,21 +1554,63 @@ body {
     width: 10px;
   }
 }
+@media (max-width: 480px) {
+  .feedback .card__title {
+    margin-left: 13px;
+    margin-top: 10px;
+  }
+  .feedback .card__body {
+    padding: 5px 20px 0px 13px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .feedback .card .card__quotes {
+    width: 16px;
+    height: 14px;
+  }
+  .feedback .card .card__quotes svg {
+    width: 8px;
+    height: 5px;
+  }
+  .feedback .card__customer-name {
+    margin-top: 6px;
+    font-size: 10px;
+  }
+  .feedback .card__footer {
+    padding: 3px 20px 0px 13px;
+  }
+  .feedback .card__footer-line {
+    max-width: 85px;
+  }
+  .feedback .card__customer-stars .stars__container {
+    margin-top: 0px;
+    max-width: 45px;
+  }
+  .feedback .card__customer-stars .stars__container .star {
+    width: 16px;
+    height: 15px;
+    display: flex;
+  }
+  .feedback .card__customer-stars .stars__container .star svg {
+    width: 6px;
+    height: 5px;
+  }
+}
 @media (max-width: 992px) {
   .gift-card__title {
     max-width: 286px;
     width: 100%;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 16px;
   }
   .gift-card__text {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     margin-top: 20px;
   }
   .gift-card__btn-block {
-    margin-top: 65px;
+    margin-top: 67px;
     padding-top: 19px;
     padding-bottom: 70px;
   }
@@ -1561,10 +1619,18 @@ body {
     line-height: 16px;
   }
   .gift-card__btn {
-    margin-top: 27px;
-    padding: 9px 53px;
+    margin-top: 18px;
+    padding: 9px 55px;
     font-size: 14px;
     line-height: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .gift-card__title {
+    font-size: 14px;
+  }
+  .gift-card__text {
+    font-size: 12px;
   }
 }
 @media (max-width: 1400px) {
@@ -1606,15 +1672,17 @@ body {
     font-size: 18px;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .about-title {
-    font-size: 28px;
+    font-size: 20px;
+    margin-bottom: 19px;
   }
   .about-body {
     margin: 0 0 60px 0;
   }
   .about-description {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 30px;
   }
   .about-image img {
     height: 162px;
@@ -1633,9 +1701,10 @@ body {
   .item-description {
     text-align: center;
     font-size: 16px;
+    line-height: 20px;
   }
   .item-image {
-    margin: 0;
+    margin: 0 0 20px 0;
   }
   .item-image svg {
     height: 53px;
@@ -1652,10 +1721,6 @@ body {
   .about-description {
     font-size: 16px;
   }
-  .about-image img {
-    height: 162px;
-    width: 162px;
-  }
 }
 @media (max-width: 576px) {
   .about {
@@ -1663,7 +1728,7 @@ body {
   }
   .about-body {
     margin: 0 0 40px 0;
-    padding: 0 14px 0 43px;
+    padding: 0 14px 0 41px;
   }
   .about-title {
     font-size: 18px;
@@ -1671,10 +1736,37 @@ body {
   .about-description {
     font-size: 14px;
   }
+  .about-image img {
+    height: 162px;
+    width: 170px;
+    margin-top: 67px;
+  }
 }
-@media (max-width: 769px) {
-  .benefits-title {
-    font-size: 24px;
+@media (max-width: 414px) {
+  .about {
+    padding: 40px 0px 0px 0px;
+  }
+  .about-text {
+    max-width: 176px;
+  }
+  .details-item {
+    margin-bottom: 59px;
+  }
+}
+@media (max-width: 375px) {
+  .about-body {
+    padding: 0 41px 0 41px;
+    flex-direction: column-reverse;
+  }
+  .about-title {
+    text-align: center;
+  }
+  .about-description {
+    text-align: center;
+  }
+  .about-image img {
+    margin-top: 0px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 992px) {
@@ -1685,12 +1777,27 @@ body {
     margin: 0 0 50px 0;
   }
 }
-@media (max-width: 769px) {
-  .benefits-block {
-    padding: 70px 40px 57px 40px;
+@media (max-width: 767px) {
+  .benefits-item {
+    margin: 0 0 35px 0;
   }
   .benefits-title {
-    margin: 0 0 55px 0;
+    font-size: 20px;
+  }
+  .benefits-subtitle {
+    font-size: 20px;
+    margin: 0 0 18px 0;
+  }
+  .benefits-description {
+    font-size: 16px;
+  }
+  .benefits-block {
+    background-image: url(../img/Rectangle-ver2.png);
+    background-size: 100% 100%;
+    padding: 55px 0 55px 0;
+  }
+  .benefits-title {
+    margin: 0 0 40px 0;
   }
   .benefits-body {
     flex-direction: column;
@@ -1700,7 +1807,7 @@ body {
 @media (max-width: 576px) {
   .benefits-block {
     background-image: url(../img/Rectangle-ver2.png);
-    background-position: 0 0;
+    background-position: center center;
     padding: 55px 0 55px 0;
   }
   .benefits-title {
@@ -1710,11 +1817,40 @@ body {
   .benefits-item {
     margin: 0 0 35px 0;
   }
+  .benefits-item:last-child {
+    margin: 0;
+  }
   .benefits-subtitle {
     font-size: 14px;
+    margin: 0 0 11px 0;
   }
   .benefits-description {
     font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 414px) {
+  .benefits-item {
+    margin: 0 0 41px 0;
+  }
+  .benefits-block {
+    padding: 61px 0 55px 0;
+  }
+  .benefits-body {
+    max-width: 251px;
+    margin: 0 auto;
+  }
+  .benefits-subtitle {
+    margin: -6px 0 11px 0;
+  }
+  .benefits-title {
+    margin: 0 0 35px 0;
+  }
+}
+@media (max-width: 375px) {
+  .benefits-block {
+    background-size: cover;
+    background-position: center center;
   }
 }
 @media (max-width: 992px) {
@@ -1743,24 +1879,24 @@ body {
 @media (max-width: 767px) {
   .effects-block {
     padding-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 61px;
   }
   .effects-block__title {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
   }
   .effects-block__container {
     margin-top: 30px;
   }
   .effects-block .effectsSlider-slide.swiper-slide span {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 16px;
   }
   .effects-block .effectsSlider-slide.swiper-slide .before {
-    padding: 2px 12px;
+    padding: 9px 24px;
   }
   .effects-block .effectsSlider-slide.swiper-slide .after {
-    padding: 2px 16px;
+    padding: 9px 34px;
   }
   .effects-block .effectsSlider-btn-next .next-small {
     display: block;
@@ -1773,6 +1909,22 @@ body {
   }
   .effects-block .effectsSlider-btn-prev .prev-large {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .effects-block__title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .effects-block .effectsSlider-slide.swiper-slide span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .effects-block .effectsSlider-slide.swiper-slide .before {
+    padding: 2px 12px;
+  }
+  .effects-block .effectsSlider-slide.swiper-slide .after {
+    padding: 2px 16px;
   }
 }
 @media (max-width: 1200px) {
