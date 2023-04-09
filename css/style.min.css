@@ -388,6 +388,16 @@ body {
   display: flex;
   flex-direction: column;
 }
+.header__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.5;
+  bottom: 0;
+  z-index: 0;
+}
 .header__video {
   position: absolute;
   top: 0;
@@ -408,6 +418,8 @@ body {
   box-sizing: border-box;
 }
 .header .scroll-down-btn {
+  position: relative;
+  z-index: 1;
   cursor: pointer;
   margin-bottom: 59px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -1913,8 +1925,13 @@ body {
 }
 @media (max-width: 480px) {
   .effects-block__title {
+    max-width: 240px;
+    width: 100%;
     font-size: 14px;
     line-height: 16px;
+  }
+  .effects-block__container {
+    margin-top: 14px;
   }
   .effects-block .effectsSlider-slide.swiper-slide span {
     font-size: 10px;
