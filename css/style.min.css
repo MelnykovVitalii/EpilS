@@ -357,6 +357,7 @@ body {
 }
 .header__logo {
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .header__logo.change-logo svg .path {
   fill: #7d544a;
