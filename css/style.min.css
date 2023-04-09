@@ -388,16 +388,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-.header__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #000;
-  opacity: 0.5;
-  bottom: 0;
-  z-index: 0;
-}
 .header__video {
   position: absolute;
   top: 0;
@@ -1214,11 +1204,8 @@ body {
     height: 25px;
   }
   .header .scroll-down-btn {
+    display: none;
     margin-bottom: 17px;
-  }
-  .header .scroll-down-btn svg {
-    height: 22px;
-    width: 22px;
   }
   .header__fullscreen {
     min-height: 227px;
