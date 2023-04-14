@@ -1066,67 +1066,12 @@ body {
 }
 
 .footer-contacts li {
-  padding: 0 0 0 47px;
   position: relative;
 }
 .footer-contacts li a {
   text-decoration: none;
   color: #392e26;
-}
-.footer-contacts li .instagram::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/instagram.svg);
-  background-repeat: no-repeat;
-  left: 0;
-  top: 0;
-  background-size: contain;
-}
-.footer-contacts li .facebook::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/facebook.svg);
-  background-repeat: no-repeat;
-  left: 0;
-  top: 0;
-  background-size: contain;
-}
-.footer-contacts li .phone::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/phone.svg);
-  background-repeat: no-repeat;
-  left: 0;
-  top: 0;
-  background-size: contain;
-}
-.footer-contacts li .email::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/mail.svg);
-  background-repeat: no-repeat;
-  left: 0;
-  top: 0;
-  background-size: contain;
-}
-.footer-contacts li .location::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/location.svg);
-  background-repeat: no-repeat;
-  left: 0;
-  top: 0;
-  background-size: contain;
+  margin-left: 22px;
 }
 
 .footer-logo {
@@ -1140,12 +1085,12 @@ body {
 }
 
 .element-title {
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   padding: 0 0 12px 0;
   margin: 0 0 28px 0;
   position: relative;
+  text-transform: uppercase;
 }
 
 .element-title::after {
@@ -1162,12 +1107,40 @@ body {
   margin: 0;
   padding: 0;
 }
+.element-list .list-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+}
+.element-list .instagram-icon svg {
+  width: 22px;
+  height: 22px;
+}
+.element-list .facebook-icon svg {
+  width: 14px;
+  height: 24px;
+}
+.element-list .phone-icon svg {
+  width: 21px;
+  height: 21px;
+}
+.element-list .mail-icon svg {
+  width: 21px;
+  height: 17px;
+}
+.element-list .location-icon svg {
+  width: 13px;
+  height: 21px;
+}
 .element-list li {
   list-style: none;
 }
 
 .list-item {
-  font-style: normal;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
@@ -1947,61 +1920,96 @@ body {
     height: 45px;
   }
   .element-title {
-    font-size: 14px;
+    font-size: 16px;
   }
   .list-item {
-    font-size: 12px;
+    font-size: 16px;
     margin: 0 0 10px 0;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .footer {
     padding: 41px 43px 51px 43px;
   }
   .element-title {
-    font-size: 10px;
+    font-size: 11px;
+    line-height: 24px;
     padding: 0 0 8px 0;
     margin: 0 0 18px 0;
   }
   .footer-logo {
     order: 2;
   }
+  .footer-logo svg {
+    width: 80px;
+    height: 25px;
+  }
   .list-item {
-    font-size: 10px;
+    font-size: 11px;
     margin: 0 0 8px 0;
+    line-height: 16px;
   }
   .element-title::after {
     width: 83px;
   }
+  .element-list .list-icon {
+    display: flex;
+    justify-content: center;
+    width: 11px;
+    height: 11px;
+  }
+  .element-list .instagram-icon svg {
+    width: 11px;
+    height: 11px;
+  }
+  .element-list .facebook-icon svg {
+    width: 7px;
+    height: 12px;
+  }
+  .element-list .phone-icon svg {
+    width: 10px;
+    height: 10px;
+  }
+  .element-list .mail-icon svg {
+    width: 11px;
+    height: 9px;
+  }
+  .element-list .location-icon svg {
+    width: 6px;
+    height: 10px;
+  }
+  .footer-contacts li a {
+    margin-left: 12px;
+  }
 }
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .footer {
-    padding: 41px 35px 51px 35px;
+    padding: 41px 23px 16px 23px;
+  }
+  .element-title {
+    font-size: 10px;
+    line-height: 12px;
   }
   .footer-logo svg {
     width: 45px;
     height: 19px;
   }
-  .footer-contacts li {
-    padding: 0 0 0 17px;
-  }
-  .footer-contacts li .instagram::before,
-  .footer-contacts li .facebook::before,
-  .footer-contacts li .phone::before,
-  .footer-contacts li .email::before,
-  .footer-contacts li .location::before {
-    width: 11px;
-    height: 10px;
+  .footer-contacts li a {
+    margin-left: 6px;
   }
   .element-title {
     padding: 0 0 4px 0;
     margin: 0 0 12px 0;
   }
   .list-item {
-    font-style: normal;
     font-weight: 500;
-    font-size: 8px;
-    line-height: 9px;
+    font-size: 11px;
+    line-height: 16px;
     margin: 0 0 3px 0;
+  }
+}
+@media (max-width: 375px) {
+  .list-item {
+    font-size: 10px;
   }
 }
